@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    background: linear-gradient(135deg, #f7e1d7, #fbc2eb, #fefefe); /* Blended three-color gradient */
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inner-box {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.boy {
+    width: 450px;
+    position: absolute;
+    top: -400px;
+    left: 30%;
+}
+
+.girl {
+    width: 550px;
+    position: absolute;
+    bottom: -400px;
+    left: 25%;
+}
+
+h1 {
+    font-size: 50px;
+    position: absolute;
+    bottom: 100px;
+    left: -90%;
+    color: #b50600; /* Softer red color */
+}
+
+.animated-text {
+    font-size: 20px;
+    font-style: oblique;
+    position: absolute;
+    bottom: 50px;
+    left: 55%;
+    transform: translateX(-50%);
+    color: blue;
+    white-space: pre-wrap; /* Preserve spaces and line breaks */
+    text-align: center;
+    width: 80%;
+}
+
+.audio-controls {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.audio-controls button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Hide audio controls */
+audio {
+    display: none;
+}
